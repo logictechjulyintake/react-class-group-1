@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Button from './Button';
+import MapOrLoop from './MapOrLoop';
+import UseStateHookEg from './UseStateHookEg';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+
+    <h5>button component example</h5>
+    <Button />
+
+    <h5>lopping or mapping through array of products</h5>
+    <MapOrLoop />
+
+    <h5>Use state example with counter</h5>
+    <UseStateHookEg />
+  </>
 }
 
 export default App;
