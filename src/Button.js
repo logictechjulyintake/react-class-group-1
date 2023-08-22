@@ -1,12 +1,15 @@
 // example button click
-function Button() {
+function Button(props) {
 
     function clickMe() {
-        alert("You clicked me!")
+        alert(props.alert)
     }
 
-    return( 
-        <button onClick={clickMe}>Click me</button>
+    return (
+        <>
+            <button {...props} >{props.text}</button>
+            {props.test}
+        </>
     )
 }
 
