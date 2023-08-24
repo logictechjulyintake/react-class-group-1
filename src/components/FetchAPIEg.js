@@ -18,6 +18,8 @@ function FetchAPIEg() {
         <p>
             {userInfo ? `${userInfo.name.title} ${userInfo.name.first} ${userInfo.name.last}` : 'Click Load User!'}
         </p>
+
+        <img src={userInfo ? userInfo.picture.large : null} height={200} />
     </>
 }
 

@@ -6,12 +6,17 @@ import Input from './components/Input';
 import MyForm from './components/MyForm';
 import UseRefEg from './components/UseRefEg';
 import FetchAPIEg from './components/FetchAPIEg';
+import APIEgTwo from './components/APIEgTwo';
+import UseEffecEg from './components/UseEffecEg';
 
 function App() {
   return <>
 
+    <UseEffecEg />
+
     <h5>Fetch API Example</h5>
     <FetchAPIEg />
+    <APIEgTwo />
 
     <hr />
 
