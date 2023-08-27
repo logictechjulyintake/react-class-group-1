@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from './Button';
 
 function MyForm() {
 
@@ -27,15 +28,15 @@ function MyForm() {
     }
 
     return <>
-        <form onSubmit={handleSubmit}>
-            <input type='text' name='username' placeholder='Username...' />
-            <input type='password' name='password' placeholder='Password...' />
+        <form onSubmit={handleSubmit} className='bg-slate-100 py-10 px-5'>
+            <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2' type='text' name='username' placeholder='Username...' />
+            <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2' type='password' name='password' placeholder='Password...' />
 
-            <select name='gender'>
+            <select className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2' name='gender'>
                 <option value='male'>Male</option>
                 <option value='female'>Female</option>
             </select>
-            <button type="submit">Go</button>
+            <Button type="submit" text="Go" />
         </form>
         <p style={{ fontSize: "14px" }}>{message}</p>
 

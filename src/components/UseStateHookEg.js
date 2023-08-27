@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from './Button';
 
 // use state hook example
 function UseStateHookEg() {
@@ -10,8 +11,11 @@ function UseStateHookEg() {
     }
 
     return <>
-        <button onClick={updateCount}>Update</button>
-        <p>{count}</p>
+        <div className='bg-slate-100 py-10 px-5'>
+            {/* <button>Update</button> */}
+            <Button onClick={updateCount} text="Update" />
+            <p className="text-3xl">{count}</p>
+        </div>
     </>
 }
 

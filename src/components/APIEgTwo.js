@@ -14,12 +14,13 @@ function APIEgTwo() {
     }
 
     return <>
-        <button onClick={getIpInfo}>Load IP Info</button>
+        <div className='bg-slate-100 py-10 px-5 drop-shadow-md'>
+            <button className='bg-slate-400 py-2 px-2 rounded hover:bg-slate-500 text-white' onClick={getIpInfo}>Load IP Info</button>
 
-        <p>
-            {apiResponse ? `${apiResponse.ip} ${apiResponse.city} ${apiResponse.region}` : 'Please click load api info button.'}
-        </p>
-
+            <p className=''>
+                {apiResponse ? `${apiResponse.ip} ${apiResponse.city} ${apiResponse.region}` : 'Please click load api info button.'}
+            </p>
+        </div>
     </>
 }
 
