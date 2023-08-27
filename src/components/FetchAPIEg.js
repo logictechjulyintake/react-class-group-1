@@ -14,12 +14,18 @@ function FetchAPIEg() {
     }
 
     return <>
-        <button onClick={getRandomUser}>Get User</button>
-        <p>
-            {userInfo ? `${userInfo.name.title} ${userInfo.name.first} ${userInfo.name.last}` : 'Click Load User!'}
-        </p>
+        <div className='py-10 px-5 font-semibold bg-orange-100'>
+            <button onClick={getRandomUser} class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mb-5">
+                Get User
+            </button>
 
-        <img src={userInfo ? userInfo.picture.large : null} height={200} />
+            <p>
+                {userInfo ? `${userInfo.name.title} ${userInfo.name.first} ${userInfo.name.last}` : 'Click Load User!'}
+            </p>
+
+            <img src={userInfo ? userInfo.picture.large : null} height={200} />
+        </div>
+
     </>
 }
 
