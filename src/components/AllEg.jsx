@@ -1,4 +1,5 @@
 import APIEgTwo from "./APIEgTwo"
+import Banner from "./Banner"
 import Button from "./Button"
 import FetchAPIEg from "./FetchAPIEg"
 import Input from "./Input"
@@ -42,6 +43,10 @@ function AllEg() {
 
         <h5 className='font-bold uppercase m-2'>Form</h5>
         <MyForm />
+
+
+        <h5 className="font-bold uppercase m-2">Banner Example</h5>
+        <Banner />
     </>
 }
 

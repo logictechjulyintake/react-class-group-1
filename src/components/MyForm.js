@@ -37,8 +37,8 @@ function MyForm() {
                 <option value='female'>Female</option>
             </select>
             <Button type="submit" text="Go" />
+            <p style={{ fontSize: "14px" }}>{message}</p>
         </form>
-        <p style={{ fontSize: "14px" }}>{message}</p>
 
     </>
 }
