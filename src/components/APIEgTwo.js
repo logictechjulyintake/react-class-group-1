@@ -5,7 +5,7 @@ function APIEgTwo() {
     const [apiResponse, setApiResponse] = useState(null)
 
     async function getIpInfo() {
-        const response = await fetch("https://ipapi.co/8.8.8.8/json/", {
+        const response = await fetch(process.env.REACT_APP_API_URL, {
             method: "GET"
         });
         const responseJson = await response.json();

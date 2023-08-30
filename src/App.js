@@ -15,7 +15,7 @@ import Home from './components/Home';
 function App() {
   return <>
     {/* <AllEg /> */}
-
+    {process.env.REACT_APP_TEST}
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />} >
